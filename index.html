@@ -1,59 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Botonera DnD - Sonidos con Volumen</title>
+    <meta charset="UTF-8">
+    <title>Botonera DnD - Sonidos por Categoría</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="styles/style.css">
-</head>
 <body>
-	<h1>🎲 Botonera DnD - Ambientes</h1>
-
-	<div class="grid-container">
-		<div class="sound-container">
-			<h3>🌳 Bosque</h3>
-			<button class="play-btn" onclick="toggleLoop('forest', this)">
-				<span class="icon">▶️</span>
-			</button>
-			<label>Volumen:
-			<input type="range" min="0" max="1" step="0.01" onchange="setVolume('forest', this.value)" value="0.5">
-			</label>
-			<audio id="forest" src="sounds/forest.mp3" loop></audio>
-		</div>
-
-		<div class="sound-container">
-			<h3>🔥 Taberna</h3>
-			<button class="play-btn" onclick="toggleLoop('village', this)">
-				<span class="icon">▶️</span>
-			</button>			
-			<label>Volumen:
-			<input type="range" min="0" max="1" step="0.01" onchange="setVolume('village', this.value)" value="0.5">
-			</label>
-			<audio id="village" src="sounds/village.mp3" loop></audio>
-		</div>
-
-		<div class="sound-container">
-			<h3>🌳 Bosque</h3>
-			<button class="play-btn" onclick="toggleLoop('forest', this)">
-				<span class="icon">▶️</span>
-			</button>			
-			<label>Volumen:
-			<input type="range" min="0" max="1" step="0.01" onchange="setVolume('forest', this.value)" value="0.5">
-			</label>
-			<audio id="forest" src="sounds/forest.mp3" loop></audio>
-		</div>
-
-		<div class="sound-container">
-			<h3>🔥 Taberna</h3>
-			<button class="play-btn" onclick="toggleLoop('forest', this)">
-				<span class="icon">▶️</span>
-			</button>			
-			<label>Volumen:
-			<input type="range" min="0" max="1" step="0.01" onchange="setVolume('tavern', this.value)" value="0.5">
-			</label>
-			<audio id="tavern" src="sounds/village.mp3" loop></audio>
-		</div>
-	</div>
-
-	<script src="js/app.js" defer></script>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-dice-d20"></i> Botonera DnD</h1>
+            <p class="subtitle">Sonidos ambientales para la mejor partida de rol</p>
+        </header>
+        
+        <div class="categories-container" id="categories-container">
+            <!-- Las categorías se generarán dinámicamente con JavaScript -->
+        </div>
+    </div>
+    
+    <div class="global-controls">
+        <button class="global-btn stop" id="stop-all-btn" title="Detener todos los sonidos">
+            <i class="fas fa-stop"></i>
+        </button>
+        <button class="global-btn" id="pause-all-btn" title="Pausar todos los sonidos">
+            <i class="fas fa-pause"></i>
+        </button>
+    </div>
+	<script src="js/app.js"></script>
 </body>
 </html>

@@ -8,30 +8,34 @@
       {
         "id": "bosque",
         "name": "Bosque",
-        "icon": "fas fa-tree",
-        "iconSource": "fontawesome",
-        "file": "sounds/forest.mp3"
+        "icon": "local_drink",
+        "iconSource": "material",
+        "file": "sounds/forest.mp3",
+        "loop": false
       },
       {
         "id": "rio",
         "name": "Río",
         "icon": "water",
         "iconSource": "material",
-        "file": "sounds/river.mp3"
+        "file": "sounds/bottle_open.wav",
+        "loop": false
       },
       {
         "id": "pueblo",
         "name": "Pueblo",
-        "icon": "home",
+        "icon": "home_and_garden",
         "iconSource": "material",
-        "file": "sounds/village.mp3"
+        "file": "sounds/village.mp3",
+        "loop": true
       },
       {
         "id": "biblioteca",
         "name": "Biblioteca",
         "icon": "fas fa-book",
         "iconSource": "fontawesome",
-        "file": "sounds/library.mp3"
+        "file": "sounds/library.mp3",
+        "loop": true
       }
     ]
   },
@@ -46,28 +50,32 @@
         "name": "Cueva",
         "icon": "terrain",
         "iconSource": "material",
-        "file": "sounds/cave.mp3"
+        "file": "sounds/cave.mp3",
+        "loop": true
       },
       {
         "id": "pantano",
         "name": "Pantano",
         "icon": "fas fa-frog",
         "iconSource": "fontawesome",
-        "file": "sounds/swamp.mp3"
+        "file": "sounds/swamp.mp3",
+        "loop": true
       },
       {
         "id": "mazmorra",
         "name": "Mazmorra",
         "icon": "fort",
         "iconSource": "material",
-        "file": "sounds/dungeon.mp3"
+        "file": "sounds/dungeon.mp3",
+        "loop": true
       },
       {
         "id": "ruinas",
         "name": "Ruinas Antiguas",
         "icon": "fas fa-monument",
         "iconSource": "fontawesome",
-        "file": "sounds/ruins.mp3"
+        "file": "sounds/ruins.mp3",
+        "loop": true
       }
     ]
   }

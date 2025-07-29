@@ -80,7 +80,7 @@ function generateUI() {
             // Crear elemento de audio
             const audio = new Audio(sound.file);
             audio.volume = 0.5;
-            audio.loop = true;
+            audio.loop = sound.loop;
             audioElements[sound.id] = audio;
             playingSounds[sound.id] = false;
         });
